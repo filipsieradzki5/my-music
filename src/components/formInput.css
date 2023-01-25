@@ -1,0 +1,43 @@
+.formInput {
+    display: flex;
+    flex-direction: column;
+    width: 280px
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    background: rgba(245, 241, 241, 0.717);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(7, 7, 7, 0.1);
+    border: 1px solid gray;
+    width: calc(100% - 40px);
+}
+
+label {
+    font-size: 12px;
+    color: gray;
+}
+.switch-block {
+    width: 300px;
+  }
+  
+  .switch-toggle input {
+      width: 0px;
+      visibility: hidden;
+  }
+
+  span {
+    font-style: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+  }
+
+  input:invalid[focused='true']{
+    border: 1px solid red;
+  }
+
+  input:invalid[focused='true'] ~ span{
+    display: block;
+  }
